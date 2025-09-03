@@ -1,10 +1,13 @@
 import styles from './Title.module.css';
+type TitleProps = {
+  children: React.ReactNode;
+};
 
-export function Title(props) {
-  console.log(props);
+export function Title(props: TitleProps) {
+  const { children } = props;
   return (
     <h1 className={styles.head}>
-      {props.children} {props.num}
+      {props.children} {children}
     </h1>
   );
 }
