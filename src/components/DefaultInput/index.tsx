@@ -1,13 +1,29 @@
+import type React from 'react';
+import styles from '../DefaultInput/styles.module.css';
+
 type DefaultInput = {
   id: string;
   labelString: string;
+  placeString: string;
 } & React.ComponentProps<'input'>;
 
-export function DefaultInput(props: DefaultInput) {
+export function DefaultInput({
+  id,
+  labelString,
+  placeString,
+  ...rest
+}: DefaultInput & React.HtmlHTMLAttributes<HTMLInputElement>) {
   return (
     <>
-      <label htmlFor={props.id}>{props.labelString}</label>
-      <input type={props.type} name='input' id={props.id} />
+      <label htmlFor={id}>{labelString}</label>
+      <input
+        className={styles.input}
+        type=''
+        name=''
+        id={id}
+        placeholder={placeString}
+        {...rest}
+      />
     </>
   );
 }
