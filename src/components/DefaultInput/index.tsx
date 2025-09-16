@@ -15,7 +15,9 @@ export function DefaultInput({
 }: DefaultInput & React.HtmlHTMLAttributes<HTMLInputElement>) {
   return (
     <>
-      <label htmlFor={id}>{labelString}</label>
+      <label className={styles.inputLabel} htmlFor={id}>
+        {labelString}
+      </label>
       <input
         className={styles.input}
         type=''

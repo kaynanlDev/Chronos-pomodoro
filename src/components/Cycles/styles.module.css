@@ -1,0 +1,29 @@
+.cycles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+.cyclesTitle {
+  font-size: 2.4rem;
+}
+.cyclesPoints {
+  display: flex;
+  gap: 0.8rem;
+}
+.cyclePoint {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+.cyclePointWork {
+  background-color: var(--info);
+}
+.cyclePointRest {
+  background-color: var(--warning);
+}
+.cyclePointLong {
+  background-color: var(--primary);
+}
