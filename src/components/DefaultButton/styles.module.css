@@ -1,0 +1,24 @@
+.button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  min-width: 24rem;
+  background-color: var(--primary);
+  color: (--text-over);
+}
+
+.button svg {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.green {
+  background-color: var(--primary);
+  color: (--text-over);
+}
+.red {
+  background-color: var(--error);
+  color: (--text-over-error);
+}
