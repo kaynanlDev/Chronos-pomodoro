@@ -1,5 +1,5 @@
-import { MainForm } from '../components/MainForm';
-import { MainTemplate } from '../templates/MainTemplate';
+import { MainForm } from '../../components/MainForm';
+import { MainTemplate } from '../../templates/MainTemplate';
 
 export function Home() {
   return (
